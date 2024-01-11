@@ -78,7 +78,7 @@
   width: 40%;
 }
 .slider-title{
-  font-size: 40px;
+  font-size: 56px;
 }
 /* Gradient Container */
 .gradient-container {
@@ -191,6 +191,7 @@
 
 .slider-para {
   font-size: 14px;
+  line-height: 30px;
 }
 .sliderimage{
   width: 100%;
@@ -200,7 +201,7 @@
 }
 @media only screen and (max-width: 767px){
   .slidertext{
-    width: 80%;
+    width: 100%;
   }
   .sliderContainer .slider{
     min-height: 400px !important;
