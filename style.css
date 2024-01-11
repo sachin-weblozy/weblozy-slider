@@ -75,7 +75,8 @@
   top: 30%;
   text-align: left;
   padding: 20px;
-  width: 40%;
+  padding-left: 100px;
+  width: 60%;
 }
 .slider-title{
   font-size: 56px;
@@ -202,6 +203,8 @@
 @media only screen and (max-width: 767px){
   .slidertext{
     width: 100%;
+    padding: 20px;
+    padding-left: 20px;
   }
   .sliderContainer .slider{
     min-height: 400px !important;
@@ -233,3 +236,7 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+
+
+/* line animation  */
