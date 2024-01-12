@@ -39,7 +39,7 @@
   cursor: pointer;
   margin-right: 5%;
   float: left;
-  color: white;
+  color: rgb(158, 158, 158);
   border-radius: 100px;
 }
 .progressBarContainer .item {
@@ -58,7 +58,7 @@
 }
 
 .progressBarContainer div span.progressBar .inProgress {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgb(183, 182, 182);
   width: 0%;
   height: 4px;
 }
@@ -217,6 +217,16 @@
     left:33%;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 1281px) {
+  .slidertext{
+    position: absolute;
+    top: 10%;
+    text-align: left;
+    padding: 20px;
+    padding-left: 100px;
+    width: 60%;
+  }
+}
 
 .outlineBtn {
     letter-spacing: 3px;
@@ -308,3 +318,5 @@
     transform: translate(-50%, 30px) rotateX(30deg);
   }
 }
+
+
