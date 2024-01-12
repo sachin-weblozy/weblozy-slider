@@ -320,3 +320,146 @@
 }
 
 
+
+.button-fancy {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+  display: inline-block;
+  padding: 16px 42px;
+  text-decoration: none;
+  position: relative;
+  
+  > .arrow {
+    background-color: transparent;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    will-transform: translate;
+    transform: translate(50%, -50%);
+    transition: transform 0.5s ease-in, 
+      right 0.5s ease-in-out,
+      width 0.4s ease 0.3s, 
+      height 0.3s ease 0.3s,
+      border-width 0.4s ease-in-out,
+      background-color 0.2s ease-in, 
+      border-color 0.4s ease-in-out;
+    
+    &:before,
+    &:after {
+      background-color: transparent;
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.2s;
+      transition-delay: 0;
+    }
+
+    &:before {
+      transform-origin: top right;
+    }
+
+    &:after {
+      transform-origin: bottom right;
+    }
+  }
+  
+  &:hover {
+    &.-white > .arrow {
+      background-color: #ffffff;
+      
+      &:before,
+      &:after {
+        background-color: #ffffff;
+      }
+    }
+    
+    &.-maroon > .arrow {
+      background-color: #8e0f22;
+      
+      &:before,
+      &:after {
+        background-color: #8e0f22;
+      }
+    }
+    
+        
+    &.-black > .arrow {
+      background-color: #555555;
+      
+      &:before,
+      &:after {
+        background-color: #555555;
+      }
+    }
+    
+    > .arrow {
+      height: 2px;
+      border-width: 0;
+      border-color: transparent;
+      width: 56px;
+      right: 0;
+      transform: translate(50%, -50%);
+      transition: transform 0.5s ease-in, 
+        right 0.5s ease 0.2s,
+        width 0.4s ease, 
+        height 0.3s ease-in-out,
+        border-width 0.3s ease-in-out,
+        background-color 0.2s ease-in 0.3s, 
+        border-color 0.3s ease-in-out;
+      
+      &:before,
+      &:after { 
+        width: 8px;
+        transition-delay: 0.4s;
+      }
+
+      &:before {
+        transform: rotate(40deg);
+      }
+
+      &:after {
+        transform: rotate(-40deg);
+      }
+    }
+    
+    > .text {
+      transform: translateX(-42px);
+      transition: transform 0.4s ease-in-out 0.2s;
+    }
+  }
+  
+  &.-white {
+    color: white;
+    border-color: white;
+  }
+  
+  &.-maroon {
+    color: #8e0f22;
+    border-color: #8e0f22;
+  }
+    
+  &.-black {
+    color: #555;
+    border-color: #555;
+  }
+  
+  > .text {
+    display: block;
+    position: relative;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+  }
+}
